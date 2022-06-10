@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моє Портфоліо</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="icon" href="./img/paravozicon.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+.page1{
+    width:100%;
+    height: 100vh;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15vh 20%;
+
+
+
+}
+.ua__logo__page1{
+    width: 40px;
+    height: 32px;
+    cursor: pointer;
+}
+.left__page1{
+    width: 70%;
+    height: 100%;
+  cursor: pointer;
+    background-color: #efefef;
+    padding-right: 20%;
+ 
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.right__page1{
+    width: 50%;
+    height: 100%;
+    border-radius: 40px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px 15px;
+    padding-bottom: 33%;
+    background-color: #efefef;
+} 
+.name__page1{
+    width: 100%;
+    font-size: 28px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.switch__menu{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+border-radius: 50%;
+box-shadow: 0 0 3px black;
+left: 45%;
+top: -5vh;
+background-color: rgba(255, 255, 255, 0.2);
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 5px;
+}
+.switch__menu__box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+.opened__switch__menu{
+    position: fixed;
+    width: 250px;
+    height: 250px;
+border-radius: 50%;
+box-shadow: 0 0 3px black;
+left: 39.5%;
+top: -15vh;
+background-color: rgba(255, 255, 255, 0.6);
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px;
+
+
+}
+.choosed__page{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+
+    
+}
+.chosed__page__box{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 15%;
+}
+.chosed__page__box3{
+    margin-top: 80%;
+}
+.choosed__page__img{
+    width: 30px;
+    height: 30px;
+}
+/* .choosed__page3{
+    margin-top: 80%;
+}
+.choosed__page4{
+    margin-top: 15%;
+}
+.choosed__page2{
+    margin-top: 15%;
+} */
+.page2{
+    width: 100%;
+    height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.page3{
+    width: 100%;
+    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11vh 10%;
+}
+.page4{
+    width: 100%;
+    height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.choosed__page111{
+    margin-top: 80%;
+}
+.left__img__page1{
+    width: 100%;
+    height: 100%;
+     
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    user-select: none;
+}
+.right__page1__pidpuc1{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.name1__page1__pidpuc{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+
+    font-size: 12px;
+    color: #767676;
+}
+.where_leave__page1{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.country__page1{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+
+    
+    font-size: 24px;
+}
+.name2__page1{
+    width: 50%;
+}
+.name1__page1{
+    width: 50%;
+}
+.left__page1__text{
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centre__page4{
+    width: 70%;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: #efefef;
+    border-radius: 25px;
+
+}
+.centre__page2{
+    width: 50%;
+    height: 40vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   background-color: #efefef;
+   border-radius: 25px;
+   padding: 5% 25px;
+}
+.page2__info__pidpuc{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #767676;
+}
+.page2__info__numbers{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    
+}
+.row{
+    width: 100%;
+    height: 70%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #efefef;
+}
+.page3__project{
+width: 30%;
+height: 100%;
+background-color: #b5b5b5;
+border-radius: 25px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+.img__page3{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: aqua;
+    border-bottom: 2px solid #767676;
+    cursor: pointer;
+}
+.img__page3__a{
+    width: 100%;
+    height: 40%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: aqua;
+    border-bottom: 2px solid #767676;
+    cursor: pointer;
+}
+.btn__proj{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+}
+.opencode{
+    width: 40%;
+    height: 80%;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name__proj{
+    width: 100%;
+    height: 5%;
+    font-size: 24px;
+    text-align: center;
+}
+.extra_infa_page4{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    font-size: 16px;
+}
+.iframe{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    left: 30%;
+    top: 5vh;
+    border-radius: 20px;
+}
+.iframe2{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    left: 30%;
+    top: 50vh;  
+    border-radius: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="opened__switch__menu">
+        <div class="chosed__page__box">
+        <div class="choosed__page choosed__page2 choosed__page2_2">
+            <img class="choosed__page__img" src="./img/contact-book.png" alt="">
+            contacts    
+        </div>
+        <div class="choosed__page choosed__page3 choosed__page3_2">
+            <img class="choosed__page__img " src="./img/portfolio.png" alt="">
+            projects    
+        </div>
+        <div class="choosed__page choosed__page4 choosed__page4_2">
+            <img class="choosed__page__img" src="./img/info.png" alt="">
+            info    
+        </div>
+        <div class="choosed__page choosed__page1_2">
+            <img class="choosed__page__img" src="./img/home.png" alt="">
+            home    
+        </div></div>
+        
+        <div class="choosed__page choosed__page1 choosed__page111">
+            <img class="choosed__page__img" src="./img/home.png" alt="">
+            home    
+        </div>
+        <div class="chosed__page__box chosed__page__box3">
+        <div class="choosed__page choosed__page3 choosed__page3_3">
+            <img class="choosed__page__img " src="./img/portfolio.png" alt="">
+            projects    
+        </div>
+        <div class="choosed__page choosed__page4 choosed__page4_3">
+            <img class="choosed__page__img" src="./img/info.png" alt="">
+            info    
+        </div>
+        <div class="choosed__page choosed__page1_3">
+            <img class="choosed__page__img" src="./img/home.png" alt="">
+            home    
+        </div> 
+        <div class="choosed__page  choosed__page2 choosed__page2_3">
+            <img class="choosed__page__img" src="./img/contact-book.png" alt="">
+            contacts    
+        </div>
+    </div>
+        <div class="chosed__page__box">
+        <div class="choosed__page choosed__page4 choosed__page4_4">
+            <img class="choosed__page__img" src="./img/info.png" alt="">
+            info    
+        </div>
+        <div class="choosed__page choosed__page1_4">
+            <img class="choosed__page__img" src="./img/home.png" alt="">
+            home    
+        </div> 
+        <div class="choosed__page  choosed__page3 choosed__page3_4">
+            <img class="choosed__page__img " src="./img/portfolio.png" alt="">
+            projects    
+        </div>  
+        <div class="choosed__page  choosed__page2 choosed__page2_4">
+            <img class="choosed__page__img" src="./img/contact-book.png" alt="">
+            contacts    
+        </div>
+    </div>
+    </div>
+    <div class="switch__menu">
+        <div class="switch__menu__box">
+<div class="choosed__page choosed__page1_1">
+    <img class="choosed__page__img" src="./img/home.png" alt="">
+    home    
+</div>
+
+    <div class="choosed__page choosed__page4 choosed__page4_1">
+        <img class="choosed__page__img" src="./img/info.png" alt="">
+        info    
+    </div>
+   
+        <div class="choosed__page choosed__page3 choosed__page3_1">
+            <img class="choosed__page__img " src="./img/portfolio.png" alt="">
+            projects    
+        </div>
+        <div class="choosed__page  choosed__page2 choosed__page2_1">
+            <img class="choosed__page__img" src="./img/contact-book.png" alt="">
+            contacts    
+        </div>
+</div>
+    </div>
+    <div class="page1 page">
+    <div class="left__page1">
+        <img class="left__img__page1" src="./img/IIIIIII" alt="">
+        <div class="left__page1__text">
+            Мене звати Віталік Михалойко. Я живу в місті Самбір і вчусь в Creator IT academy та в Самбірській гімназії. Мені 14 років і я в 9 класі. Займасю кодингом, веду пасивний спосб життя.
+        </div>
+    </div>
+    <div class="right__page1">
+        <div class="right__page1__pidpuc1">
+            <div class="name1__page1__pidpuc">Name1</div>
+            <div class="name1__page1__pidpuc">Name2</div>
+        </div>
+        <div class="name__page1"><div class="name1__page1">Vitaliy</div>
+    <div class="name2__page1">Myckhaloiko</div>
+</div>
+<div class="right__page1__pidpuc1">
+    <div class="name1__page1__pidpuc">I live in country</div>
+    <div class="name1__page1__pidpuc">I live in city</div>
+</div>
+<div class="where_leave__page1">
+    <div class="country__page2 country__page1">
+        <img class="ua__logo__page1 ua__logo__page1_1" src="./img/ukraine.png" alt="ua">
+        <div class="nam__country__page1">Ukraine</div>
+
+    </div>
+    <div class="city__page1 country__page1">
+        <img class="ua__logo__page1 ua__logo__page2" src="./img/ukraine.png" alt="ua">
+        <div class="nam__city__page1">Sambir</div>
+    </div>
+</div>
+        
+    </div>
+    <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5294525.312614309!2d28.90919502016987!3d49.61250527466275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d1d9c154700e8f%3A0x1068488f64010!2z0KPQutGA0LDQuNC90LA!5e0!3m2!1sru!2sua!4v1654874301956!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class="iframe2"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41439.92729766407!2d23.161879063320605!3d49.5223614835082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ba508e0cb4809%3A0xfca9f0de7e36aea0!2z0KHQsNC80LHQvtGALCDQm9GM0LLQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDgxNDAw!5e0!3m2!1sru!2sua!4v1654875769545!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="page2 page">
+        <div class="centre__page2">
+            <div class="page2__info__pidpuc">
+                <div class="mynumber">My number</div>
+                <div class="myemail">My email</div>
+            </div>
+            <div class="page2__info__numbers">
+                <div class="myNumber">+380662511427</div>
+                <div class="myTmail">muhaloiko.vitalik@gmal.com</div>
+            </div>
+        </div>
+    </div>
+    <div class="page3 page">
+       <div class="row">
+           <div class="page3__project">
+          <a target="_blank"  class="img__page3__a" href="https://paravojik.github.io/donatebtn/"><img class="img__page3" src="./img/donate.PNG" alt=""></a> 
+           <div class="name__proj">Donate Button</div>
+           <div class="extra_infa_page4">
+               ДОПОМОЖИ ЗСУ!!!
+           </div>
+           <div class="btn__proj">
+               <a target="_blank"  href="https://paravojik.github.io/donatebtn/"  class="opencode open">Open</a>
+               <a target="_blank"  href="https://github.com/Paravojik/donatebtn" class="opencode code">See code</a>
+               
+           </div>
+           </div>
+           <div class="page3__project">
+            <a target="_blank" class="img__page3__a" href="https://paravojik.github.io/cenzorhtml/"><img class="img__page3" src="./img/cenzor.PNG" alt=""></a> 
+             <div class="name__proj">Cenzor Html</div>
+             <div class="extra_infa_page4">
+                 Створи свій власний сайт в браузері
+             </div>
+             <div class="btn__proj">
+                 <a target="_blank"  href="https://paravojik.github.io/cenzorhtml/"  class="opencode open">Open</a>
+                 <a target="_blank"  href="https://github.com/Paravojik/cenzorhtml" class="opencode code">See code</a>
+                 
+             </div>
+             </div>
+             <div class="page3__project">
+                <a target="_blank" class="img__page3__a" href="https://paravojik.github.io/moshefullofPaint/"><img class="img__page3" src="./img/paint.PNG" alt=""></a> 
+                 <div class="name__proj">Paint</div>
+                 <div class="extra_infa_page4">
+                    Інша версія Paint, яка побудована на canvas
+                 </div>
+                 <div class="btn__proj">
+                     <a target="_blank"  href="https://paravojik.github.io/moshefullofPaint/"  class="opencode open">Open</a>
+                     <a target="_blank"  href="https://github.com/Paravojik/moshefullofPaint" class="opencode code">See code</a>
+                     
+                 </div>
+                 </div>
+       </div> 
+
+
+       <div class="row">
+        <div class="page3__project">
+       <a target="_blank"  class="img__page3__a" href="https://paravojik.github.io/dashbo/"><img class="img__page3" src="./img/dashboard.PNG" alt=""></a> 
+        <div class="name__proj">Dashboard</div>
+        <div class="extra_infa_page4">
+          Слідкуй за своїми горшима
+        </div>
+        <div class="btn__proj">
+            <a target="_blank"  href="https://paravojik.github.io/dashbo/"  class="opencode open">Open</a>
+            <a target="_blank"  href="https://github.com/Paravojik/dashbo" class="opencode code">See code</a>
+            
+        </div>
+        </div>
+        <div class="page3__project">
+         <a target="_blank" class="img__page3__a" href="https://paravojik.github.io/blumalka2/"><img class="img__page3" src="./img/blumalka.PNG" alt=""></a> 
+          <div class="name__proj">Blumalka</div>
+          <div class="extra_infa_page4">
+              Проведи мишкою по квадратиках
+          </div>
+          <div class="btn__proj">
+              <a target="_blank"  href="https://paravojik.github.io/blumalka2/"  class="opencode open">Open</a>
+              <a target="_blank"  href="https://github.com/Paravojik/blumalka2" class="opencode code">See code</a>
+              
+          </div>
+          </div>
+          <div class="page3__project">
+             <a target="_blank" class="img__page3__a" href="https://paravojik.github.io/steam/"><img class="img__page3" src="./img/steam.PNG" alt=""></a> 
+              <div class="name__proj">Steam</div>
+              <div class="extra_infa_page4">
+                 Попробуй цей Steam.
+              </div>
+              <div class="btn__proj">
+                  <a target="_blank"  href="https://paravojik.github.io/steam/"  class="opencode open">Open</a>
+                  <a target="_blank"  href="https://github.com/Paravojik/steam" class="opencode code">See code</a>
+                  
+              </div>
+              </div>
+    </div> 
+    </div>
+    <div class="page4 page">
+        <div class="centre__page4">
+           Мене звати Віталік Михалойко. Я живу в місті Самбір і вчусь в Creator IT academy та в Самбірській гімназії. Мені 14 років і я в 9 класі. Займасю кодингом, веду пасивний спосб життя. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quia officia nihil aut esse sequi nulla minima sit deleniti assumenda voluptatibus, vel sint eos ut neque architecto ex nostrum excepturi eum hic, mollitia ullam illo. Saepe eius rerum inventore facilis. Rerum laborum voluptate reiciendis soluta ad harum nulla eos explicabo excepturi impedit. Tempore illo ullam animi consequuntur mollitia soluta aut est aspernatur voluptatibus vero, dignissimos dolor quo adipisci minus cum facilis iure distinctio laborum ad dolores! Reprehenderit, fuga. Error eveniet qui recusandae? Alias ea cum id quod, assumenda possimus accusamus. Molestiae modi nesciunt architecto nemo incidunt, nulla odio itaque vero?
+        </div>
+    </div>
+    <script>
+$('.choosed__page4_1').toggle(0)
+$('.choosed__page3_1').toggle(0)
+$('.choosed__page2_1').toggle(0)
+$('.choosed__page3_2').toggle(0)
+$('.choosed__page4_2').toggle(0)
+$('.choosed__page1_2').toggle(0)
+$('.choosed__page2_3').toggle(0)
+$('.choosed__page4_3').toggle(0)
+$('.choosed__page1_3').toggle(0)
+$('.choosed__page3_4').toggle(0)
+$('.choosed__page2_4').toggle(0)
+$('.choosed__page1_4').toggle(0)
+let iswitch__menu =0;
+$('.left__page1__text').toggle(0)
+
+$('.iframe').toggle(0)
+$('.iframe2').toggle(0)
+
+$('.ua__logo__page1_1').click(function(){
+    $('.iframe').fadeToggle(200)
+})
+$('.ua__logo__page2').click(function(){
+    $('.iframe2').fadeToggle(200)
+})
+// $('.ua__logo__page1_1').mouseleave(function(){
+//     $('.iframe').fadeToggle(200)
+// })
+
+$('.left__img__page1').mouseenter(function(){
+    $('.left__page1__text').toggle(100)
+    $('.left__img__page1').toggle(100)
+
+})
+$('.left__page1').mouseleave(function(){
+    $('.left__page1__text').toggle(100)
+    $('.left__img__page1').toggle(100)
+    
+})
+
+$('.page').click(function(){
+    $('.opened__switch__menu').slideUp(400)
+    iswitch__menu=0;
+})
+
+
+        $('.page2').slideToggle(0)
+        $('.page3').slideToggle(0)
+        $('.page4').slideToggle(0)
+        $('.opened__switch__menu').slideToggle(0)
+        $('.switch__menu').click(function(){
+            if(iswitch__menu==0){
+                $('.opened__switch__menu').slideToggle(400)
+            iswitch__menu=1;
+            }
+        
+        })
+        $('.choosed__page2').click(function(){
+            $('.choosed__page4_1').slideUp(0)
+$('.choosed__page3_1').slideUp(0)
+$('.choosed__page1_1').slideUp(0)
+$('.choosed__page2_1').slideDown(0)
+if(iswitch__menu==1){
+    $('.opened__switch__menu').slideToggle(400)
+    iswitch__menu=0;
+}
+     
+            $('.page2').slideDown(100)
+            $('.page1').slideUp(100)
+            $('.page3').slideUp(0)
+        $('.page4').slideUp(0)
+        })
+        $('.choosed__page3').click(function(){
+            $('.choosed__page4_1').slideUp(0)
+$('.choosed__page3_1').slideDown(0)
+$('.choosed__page1_1').slideUp(0)
+$('.choosed__page2_1').slideUp(0)
+            if(iswitch__menu==1){
+    $('.opened__switch__menu').slideToggle(400)
+    iswitch__menu=0;
+}
+
+            $('.page3').slideDown(100)
+            $('.page1').slideUp(100)
+            $('.page2').slideUp(0)
+        $('.page4').slideUp(0)
+        })
+        $('.choosed__page4').click(function(){
+            $('.choosed__page4_1').slideDown(0)
+$('.choosed__page3_1').slideUp(0)
+$('.choosed__page1_1').slideUp(0)
+$('.choosed__page2_1').slideUp(0)
+            if(iswitch__menu==1){
+    $('.opened__switch__menu').slideToggle(400)
+    iswitch__menu=0;
+}
+            $('.page4').slideDown(100)
+            $('.page1').slideUp(100)
+            $('.page3').slideUp(0)
+        $('.page2').slideUp(0)
+        })
+        $('.choosed__page1').click(function(){
+            $('.choosed__page4_1').slideUp(0)
+$('.choosed__page3_1').slideUp(0)
+$('.choosed__page1_1').slideDown(0)
+$('.choosed__page2_1').slideUp(0)
+            if(iswitch__menu==1){
+    $('.opened__switch__menu').slideToggle(400)
+    iswitch__menu=0;
+}
+            $('.page1').slideDown(100)
+            $('.page2').slideUp(100)
+            $('.page3').slideUp(0)
+        $('.page4').slideUp(0)
+        })
+    </script>
+</body>
+</html>
